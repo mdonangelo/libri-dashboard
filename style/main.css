@@ -181,7 +181,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Primary Button */
 .primary-small-btn,
-.primary-medium-btn  {
+.primary-medium-btn,
+.brand-form button {
     max-width: fit-content;
 
     line-height: 160%;
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--L-color-black-base);
 }
 
-.primary-medium-btn {
+.primary-medium-btn, .brand-form button {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
@@ -215,7 +216,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .primary-small-btn > img,
-.primary-medium-btn > img  {
+.primary-medium-btn > img,
+.brand-form button > img  {
     max-width: 1rem;
     width: 1rem;
 }
@@ -223,17 +225,21 @@ h1, h2, h3, h4, h5, h6 {
 .primary-small-btn:hover,
 .primary-medium-btn:hover,
 .primary-small-btn.pressed,
-.primary-medium-btn.pressed {
+.primary-medium-btn.pressed,
+.brand-form button:hover,
+.brand-form button.pressed {
     background: var(--L-color-black-dark-50);
 }
 
 .primary-small-btn:focus, .primary-small-btn:active,
-.primary-medium-btn:focus, .primary-medium-btn:active {
+.primary-medium-btn:focus, .primary-medium-btn:active,
+.brand-form button:focus, .brand-form button:active {
     box-shadow: var(--box-shadow-button);
 }
 
 .primary-small-btn:disabled, .primary-small-btn.disabled,
-.primary-medium-btn:disabled, .primary-medium-btn.disabled {
+.primary-medium-btn:disabled, .primary-medium-btn.disabled,
+.brand-form button:disabled {
     background: var(--L-color-grey-dark-40);
     color: var(--L-color-grey-dark-20);
     cursor: not-allowed;
@@ -496,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
 /* 
 INPUT CHECKBOX
 */
-.checkbox-small {
+.checkbox-small, .checkbox-medium {
     display: block;
     position: relative;
     padding: 0 0 0 1rem;
@@ -507,21 +513,30 @@ INPUT CHECKBOX
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    line-height: 150%;
 }
 
-.text-check {
+.checkbox-small .text-check, .checkbox-medium .text-check {
+    display: inline-block;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
 
-    margin-left: 0.5rem;
+    margin: 0 0 0 0.5rem;
 }
 
-.text-check:hover {
+.checkbox-small .text-check:hover, .checkbox-medium .text-check:hover {
     font-weight: 600;
 }
 
-.checkbox-small input {
+.checkbox-medium .text-check {
+    font-size: 1rem;
+    font-weight: normal;
+
+    margin: 0.25rem 0 0 1rem;
+}
+
+.checkbox-small input, .checkbox-medium input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -529,7 +544,7 @@ INPUT CHECKBOX
     width: 0;
 }
 
-.checkmark {
+.checkbox-small .checkmark, .checkbox-medium .checkmark {
     position: absolute;
     top: 0.25rem;
     left: 0;
@@ -541,11 +556,20 @@ INPUT CHECKBOX
     margin-right: 0.5rem;
 }
 
-.checkbox-small:hover input ~ .checkmark {
+.checkbox-medium .checkmark {
+    border: 3px solid var(--L-color-grey-dark-30);
+
+    top: 0.25rem;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.checkbox-small:hover input ~ .checkmark, .checkbox-medium:hover input ~ .checkmark {
     background: var(--L-color-purple-light-50);
 }
 
-.checkbox-small input:checked ~ .checkmark {
+.checkbox-small input:checked ~ .checkmark, .checkbox-medium input:checked ~ .checkmark {
     background: var(--L-color-purple-base);
     border-color: var(--L-color-purple-base);
 }
@@ -556,11 +580,11 @@ INPUT CHECKBOX
     display: none;
 }
 
-.checkbox-small input:checked ~ .checkmark:after {
+.checkbox-small input:checked ~ .checkmark:after, .checkbox-medium input:checked ~ .checkmark:after {
     display: block;
 }
 
-.checkbox-small .checkmark:after {
+.checkbox-small .checkmark:after, .checkbox-medium .checkmark:after {
     left: 0.24rem;
     top: 0.04rem;
     width: 0.15rem;
@@ -570,4 +594,117 @@ INPUT CHECKBOX
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.checkbox-medium .checkmark:after {
+    left: 0.3rem;
+    top: 0.05rem;
+    width: 0.25rem;
+    height: 0.65rem;
+    border-width: 0 0.2rem 0.2rem 0;
+}
+
+/*
+    FORMS
+*/
+.brand-form {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    grid-auto-flow: dense;
+}
+
+.brand-form .input {
+    position: relative;
+    text-align: left;
+}
+
+.brand-form input, .brand-form textarea, .brand-form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    padding: 1.125rem 1rem 1rem 1rem;
+
+    border: 0;
+    border-bottom: 1px solid var(--L-color-grey-dark-10);
+    border-radius: 0.25rem 0.25rem 0 0;
+    background: var(--L-color-grey-light-40);
+    
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.brand-form input ~ .input-name, .brand-form textarea ~ .input-name, .brand-form select ~ .input-name {
+    position: absolute;
+    top: 1.125rem;
+    left: 1rem;
+    font-size: 1rem;
+    color: var(--L-color-grey-dark-20);
+    padding:0;
+
+    transition: 0.1s;
+}
+
+.brand-form textarea {
+    height: 10rem;
+}
+
+.brand-form input:focus ~ .input-name,
+.brand-form textarea:focus ~ .input-name,
+.brand-form select:focus ~ .input-name {
+    border: inherit;
+}
+
+.brand-form input:focus ~ .input-name, 
+.brand-form input:valid ~ .input-name,
+.brand-form textarea:focus ~ .input-name,
+.brand-form textarea:valid ~ .input-name,
+.brand-form select:focus ~ .input-name,
+.brand-form select:valid ~ .input-name {
+    transform: translateY(-0.85rem);
+    color: var(--L-color-black-base);
+    font-size: 0.75rem;
+}
+
+.brand-form input:focus ~ .input-name, 
+.brand-form textarea:focus ~ .input-name,
+.brand-form select:focus ~ .input-name {
+    color: var(--L-color-purple-base);
+}
+
+.brand-form select {
+    background: url("../images/icon/grey/uil_angle-down.svg") var(--L-color-grey-light-40) no-repeat;
+    background-position: 99% 1rem;
+}
+
+.brand-form .required {
+    color: var(--L-color-purple-base);
+    font-weight: 600;
+}
+
+.brand-form .error {
+    display: inline-flex;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 100%;
+    color: var(--L-color-red-dark-10);
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.brand-form .error img {
+    width: 1rem;
+    max-width: 1rem;
+}
+
+.brand-form .error.active {
+    display: inline-flex;
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>Formulários</title>
+</head>
+<body>
+
+    <div style=" width: 100%; padding: 2rem;">
+        <form action="" method="POST" class="brand-form">
+            <label class="input">
+                <input type="text" name="nome" required>
+                <span class="input-name">Nome <span class="required">*</span></span>
+                <span class="error">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="input">
+                <input type="text" name="sobrenome" value="oi" required>
+                <span class="input-name">Sobrenome <span class="required">*</span></span>
+                <span class="error">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="input">
+                <select name="" id="" required>
+                    <option value="" selected></option>
+                    <option value="">Samba</option>
+                    <option value="">Jazz</option>
+                    <option value="">Arrocha</option>
+                </select>
+                    
+                <span class="input-name">Selecionar música... <span class="required">*</span></span>
+                <span class="error">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="input">
+                <input type="email" name="email" required>
+                <span class="input-name">E-mail <span class="required">*</span></span>
+                <span class="error active">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    Insira um e-mail válido
+                </span>
+            </label>
+
+            <label class="input">
+                <input type="text" name="empresa" required>
+                <span class="input-name">Empresa <span class="required">*</span></span>
+                <span class="error">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="input full-form">
+                <textarea name="mensagem" required></textarea>
+                <span class="input-name">Mensagem <span class="required">*</span></span>
+                <span class="error">
+                    <img src="images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="checkbox-medium">
+                <input type="checkbox" name="" id="">
+                <span class="checkmark"></span>
+                <span class="text-check">Concordo com os termos de responsabilidade.</span>
+            </label>
+        
+            <button type="submit" name="sendContact" class="primary-medium-btn">Enviar mensagem</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>
