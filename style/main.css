@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 0.5rem;
 
     border-radius: 0.25rem;
-    border: 1px solid var(--L-color-white);
+    border: 1px solid var(--L-color-grey-base);
     background: var(--L-color-white);
 
     cursor: pointer;
@@ -435,6 +435,44 @@ h1, h2, h3, h4, h5, h6 {
     cursor: not-allowed;
 }
 
+
+.popver-container {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+}
+
+.popover-message {
+    position: absolute;
+    top: -2rem;
+    background: var(--L-color-black-base);
+    color: var(--L-color-white);
+    
+    padding: 0.25rem;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 160%;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    border-radius: 0.25rem;
+
+    display: none;
+    width: auto;
+    white-space: nowrap;
+
+    transition: all ease 0.2s;
+}
+
+.popover-message.active{
+    display: block;
+}
+
 /* Dropdown */
 .dropdown-container {
     display: inline-block;
@@ -446,7 +484,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 2rem;
     border-radius: 0.25rem;
     border: 1px solid var(--L-color-grey-base);
-    background: var(--white);
+    background: var(--L-color-white);
     box-shadow: var(--box-shadow-level-1);
 
     width: auto;
@@ -825,12 +863,18 @@ INPUT CHECKBOX
     bottom: 4.125rem;
     border-radius: 0.25rem;
     border: 1px solid var(--L-color-grey-base);
-    background: var(--white);
+    background: var(--L-color-white);
     box-shadow: var(--box-shadow-level-1);
     width: auto;
     min-width: 180px;
 
     padding: 1rem;
+
+    display: none;
+}
+
+.popup-container.active {
+    display: block;
 }
 
 .popup-container li { 
