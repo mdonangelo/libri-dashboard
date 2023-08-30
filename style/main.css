@@ -904,3 +904,67 @@ INPUT CHECKBOX
 .popup-container li a:hover {
     font-weight: 600;
 }
+
+
+/* 
+    TAGS
+*/
+
+.tag-small, .tag-medium {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.13rem 0.75rem;
+
+    color: var(--L-color-black-base);
+    background: var(--L-color-grey-light-40);
+    border: 1px solid var(--L-color-grey-base);
+    border-radius: 5rem;
+}
+
+.tag-small {
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.tag-small img {
+    width: 1rem;
+}
+
+.tag-medium {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.tag-medium img {
+    width: 1.25rem;
+}
+
+.tag-small.success, .tag-medium.success {
+    color: var(--L-color-green-dark-10);
+    background: var(--L-color-green-light-40);
+    border: 1px solid var(--L-color-green-light-30);
+}
+
+.tag-small.error, .tag-medium.error {
+    color: var(--L-color-red-dark-10);
+    background: var(--L-color-red-light-40);
+    border: 1px solid var(--L-color-red-light-30);
+}
+
+.tag-small.alert, .tag-medium.alert {
+    color: var(--L-color-yellow-dark-10);
+    background: var(--L-color-yellow-light-40);
+    border: 1px solid var(--L-color-yellow-light-30);
+}
+
+.tag-small.emphasis, .tag-medium.emphasis {
+    color: var(--L-color-purple-base);
+    background: var(--L-color-purple-light-50);
+    border: 1px solid var(--L-color-purple-light-30);
+}
