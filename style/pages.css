@@ -44,6 +44,9 @@
 }
 
 .access-logo {
-    max-width: 64px;
     margin: 0 auto 2.5rem auto;
+}
+
+.access-logo img {
+    max-width: 64px;
 }
