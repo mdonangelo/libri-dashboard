@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.popver-container {
+.popover-container {
     position: relative;
     width: auto;
     height: auto;
@@ -501,10 +501,22 @@ h1, h2, h3, h4, h5, h6 {
 
     width: auto;
     min-width: 120px;
+
+    display: none;
+    height: 0;
+}
+
+.nav-btn.active {
+    display: block;
+    height: auto;
 }
 
 .position-top-2_75 {
     top: 2.75rem;
+}
+
+.dropdown-container .pressed img {
+    transform: rotate(180deg);
 }
 
 .nav-btn ul li {
