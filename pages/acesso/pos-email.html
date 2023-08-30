@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/pages.css">
+    <title>Recuperar senha</title>
+</head>
+
+<body class="access-container text-center">
+
+    <section class="access-section">
+        
+        <img class="access-logo" src="../../images/logo-libri.svg" alt="Logo de Libri">
+
+        <h1 class="headline1-large-semi-bold">Defina uma nova senha.</h1>
+        <p class="body1-regular black-light-30">Sua senha deve ter ao menos 8 caracteres.</p>
+
+        <form action="sucesso-recuperacao.html" method="GET" class="brand-form text-center">
+
+            <label class="input">
+                <input type="password" name="senha" required>
+                <span class="input-name">Senha <span class="required">*</span></span>
+                <span class="error">
+                    <img src="../../images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <label class="input">
+                <input type="password" name="confirmar-senha" required>
+                <span class="input-name">Confirmar senha <span class="required">*</span></span>
+                <span class="error">
+                    <img src="../../images/icon/red/uil_info-circle.svg" alt="">
+                    This field is required
+                </span>
+            </label>
+
+            <button type="submit" name="sendContact" class="primary-medium-btn">Redefinir senha <img src="../../images/icon/white/uil_arrow-right.svg" alt=""></button>
+        </form>
+    </section>
+
+</body>
+
+</html>

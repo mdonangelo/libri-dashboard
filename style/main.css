@@ -32,6 +32,7 @@
     --L-color-cyan-base:#46E9FF;
     --L-color-cyan-light-40:#DAFBFF;
 
+    --L-color-purple-dark-10:#8B38CC;
     --L-color-purple-base:#AE46FF;
     --L-color-purple-light-30:#DFB5FF;
     --L-color-purple-light-50:#FDFBFE;
@@ -42,6 +43,101 @@
 
     --box-shadow-level-1: 0px 2px 2px 0px rgba(0, 0, 0, 0.03), 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
     --box-shadow-button: 0px 0px 4px 0px rgba(89, 93, 95, 0.25);
+}
+
+/* CSS COLORS */
+.white {
+    color: #FFFFFF;
+}
+.brand-gradient {
+    color: linear-gradient(180deg, #FF606D 0%, #AE46FF 49.48%, #46E9FF 100%);
+}
+.black-dark-50 {
+    color: #0D0D0D;
+}
+.black-base {
+    color: #262626;
+}
+.black-light-10 {
+    color: #E5EEF1;
+}
+.black-light-20 {
+    color: #7D7D7D;
+}
+.black-light-30 {
+    color: #A8A8A8;
+}
+.grey-dark-40 {
+    color: #2C2F2F;
+}
+.grey-dark-30 {
+    color: #595D5F;
+}
+.grey-dark-20 {
+    color: #858C8E;
+}
+.grey-dark-10 {
+    color: #B2BBBE;
+}
+.grey-base {
+    color: #DEEAED;
+}
+.grey-light-20 {
+    color: #EBF2F4;
+}
+.grey-light-30 {
+    color: #F2F6F8;
+}
+.grey-light-40 {
+    color: #F8FBFB;
+}
+.yellow-dark-10 {
+    color:#E5AC00;
+}
+.yellow-light-30 {
+    color:#FFF2CC;
+}
+.yellow-light-40 {
+    color:#FFF5F5;
+}
+.green-dark-10 {
+    color:#32B62F;
+}
+.green-light-30 {
+    color:#CDFFCC;
+}
+.green-light-40 {
+    color:#FAFFFA;
+}
+.cyan-dark-10 {
+    color:#38BACC;
+}
+.cyan-base {
+    color:#46E9FF;
+}
+.cyan-light-40 {
+    color:#DAFBFF;
+}
+.purple-dark-10 {
+    color:#8B38CC;
+}
+.purple-base {
+    color:#AE46FF;
+}
+.purple-light-30 {
+    color:#DFB5FF;
+}
+.purple-light-50 {
+    color:#FDFBFE;
+}
+.red-dark-10 {
+    color:#F34;
+}
+.red-light-30 {
+    color:#FCC;
+}
+.red-light-40 {
+    color:#FFFAFA;
 }
 
 /* 
@@ -180,6 +276,17 @@ h1, h2, h3, h4, h5, h6 {
 /* 
     BUTTONS STYLE
 */
+
+/* Link */
+.bold-purple-link {
+    font-weight: 600;
+    color: var(--L-color-purple-base);
+    text-decoration: none;
+}
+
+.bold-purple-link:hover {
+    color: var(--L-color-purple-dark-10);
+}
 
 /* Primary Button */
 .primary-small-btn,
@@ -1011,4 +1118,18 @@ INPUT CHECKBOX
     color: var(--L-color-purple-base);
     background: var(--L-color-purple-light-50);
     border: 1px solid var(--L-color-purple-light-30);
+}
+
+/* CONTAINERS */
+.display-block {
+    display: block;
+}
+
+.mt-40 {
+    margin-top: 2.5rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
