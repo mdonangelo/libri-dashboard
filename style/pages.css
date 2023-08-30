@@ -9,10 +9,6 @@
     min-height:100vh;
 }
 
-.text-center {
-    text-align: center;
-}
-
 .access-section {
     width: 100%;
     max-width: 470px;
@@ -49,4 +45,16 @@
 
 .access-logo img {
     max-width: 64px;
+}
+
+/* 
+    MAIN LAYOUT
+*/
+.main-layout {
+    display: grid;
+    grid-template-columns: 18.75rem 1fr;
+}
+
+.content-area {
+    padding: 2.5rem;
 }
