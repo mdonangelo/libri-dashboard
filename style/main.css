@@ -921,6 +921,9 @@ INPUT CHECKBOX
     background: var(--L-color-grey-light-40);
     border: 1px solid var(--L-color-grey-base);
     border-radius: 5rem;
+
+    width: auto;
+    white-space: nowrap;
 }
 
 .tag-small {
