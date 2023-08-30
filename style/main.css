@@ -731,6 +731,7 @@ INPUT CHECKBOX
 .logo {
     display: block;
     margin-bottom: 2rem;
+    flex-grow: 0;
 }
 
 .main-nav .logo img {
@@ -740,6 +741,7 @@ INPUT CHECKBOX
 
 .main-list-nav {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -747,12 +749,19 @@ INPUT CHECKBOX
     justify-content: flex-start;
     align-items: flex-start;
 
+    flex-grow: 1;
+
 }
 
 .main-list-nav ul li {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.main-links {
+    width: 100%;
+    flex-grow: 1;
 }
 
 .main-list-nav ul li + li {
@@ -792,7 +801,8 @@ INPUT CHECKBOX
 
 .main-list-nav ul li a:hover, .profile-nav:hover,
 .main-list-nav ul li a:focus, .profile-nav:focus,
-.main-list-nav ul li a:active, .profile-nav:active {
+.main-list-nav ul li a:active, .profile-nav:active,
+.main-list-nav ul li a.pressed, .profile-nav.pressed {
     background: var(--L-color-grey-light-30);
     font-weight: 600;
 }
@@ -806,6 +816,7 @@ INPUT CHECKBOX
     width: 100%;
     display: block;
     position: relative;
+    flex-grow: 0;
 }
 
 .popup-container {
