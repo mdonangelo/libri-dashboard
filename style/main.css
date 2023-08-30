@@ -57,6 +57,8 @@ body {
     font: 400 1rem "Poppins", Helvetica, Arial, sans-serif;
     background-color: var(--L-color-white);
     color: var(--L-color-black-base);
+
+    height: 100%;
 }
 
 img {
@@ -796,9 +798,36 @@ INPUT CHECKBOX
     flex-grow: 0;
 }
 
+.logo a {
+    display: block;
+    line-height: 0%;
+}
+
+.hamburguer-menu {
+    display: none;
+}
+
+.close-menu {
+    margin: 0 0 1.5rem 0;
+    display: none;
+}
+
 .main-nav .logo img {
     width: 49px;
     margin-left: 0.75rem;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-grow: 1;
 }
 
 .main-list-nav {
