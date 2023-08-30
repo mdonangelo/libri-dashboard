@@ -1129,6 +1129,14 @@ INPUT CHECKBOX
     margin-top: 2.5rem;
 }
 
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-0_25 {
+    margin-bottom: 0.25rem;
+}
+
 .mx-auto {
     margin-left: auto;
     margin-right: auto;

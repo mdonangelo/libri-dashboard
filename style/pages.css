@@ -53,8 +53,24 @@
 .main-layout {
     display: grid;
     grid-template-columns: 18.75rem 1fr;
+    gap: 0;
 }
 
 .content-area {
     padding: 2.5rem;
+    background: var(--L-color-grey-light-40);
+}
+
+.grid-2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.rounded-box {
+    padding: 1.5rem;
+    width: 100%;
+    background: var(--L-color-white);
+    border: 1px solid var(--L-color-grey-base);
+    border-radius: 0.5rem;
 }
