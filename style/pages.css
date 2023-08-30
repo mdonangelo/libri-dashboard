@@ -183,3 +183,50 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+/* 
+    HOME FEED 
+*/
+.feed-list {
+    margin: 0;
+    padding: 0;
+}
+
+.feed-list li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid var(--L-color-grey-base);
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-decoration: none;
+    color: var(--L-color-black-base);
+
+    border-radius: 0.25rem;
+
+    padding: 1rem 0.5rem;
+}
+
+.feed-item:hover {
+    background: var(--L-color-grey-light-40);
+}
+
+.feed-item .feed-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.feed-item .feed-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
