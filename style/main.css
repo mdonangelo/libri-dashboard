@@ -889,7 +889,7 @@ INPUT CHECKBOX
     border: 1px solid var(--L-color-grey-base);
     background: var(--L-color-white);
     box-shadow: var(--box-shadow-level-1);
-    width: auto;
+    width: 100%;
     min-width: 180px;
 
     padding: 1rem;

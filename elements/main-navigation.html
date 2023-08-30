@@ -60,7 +60,7 @@
 
                 <div class="menu-popup-container">
 
-                    <ul class="popup-container active">
+                    <ul class="popup-container">
                         <li><a href="#">Meu perfil</a></li>
                         <li><a href="#">Sair</a></li>
                     </ul>
@@ -73,14 +73,23 @@
     
                         <img src="../images/icon/black-base/uil_menu-hamburguer.svg" alt="Ícone menu">
                     </a>
-                    
+                
                 </div>
-
-
             </nav>
-
-
         </div>
+
+        <script>
+            // Mostrar menus internos ao menu de perfil
+            let profileButton = document.querySelector('.profile-nav')
+            let profileMenu = document.querySelector('.menu-popup-container');
+            let popupContainer = profileMenu.querySelector('.popup-container');
+
+            profileButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                popupContainer.classList.toggle('active');
+                profileButton.classList.toggle('pressed')
+            })
+        </script>
     
 </body>
 </html>
