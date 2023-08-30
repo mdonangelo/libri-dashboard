@@ -92,7 +92,7 @@
     color: #F8FBFB;
 }
 .yellow-dark-10 {
-    color:#E5AC00;
+    color:#E5AC00 !important;
 }
 .yellow-light-30 {
     color:#FFF2CC;
@@ -131,7 +131,7 @@
     color:#FDFBFE;
 }
 .red-dark-10 {
-    color:#F34;
+    color:#F34 !important;
 }
 .red-light-30 {
     color:#FCC;
@@ -550,10 +550,6 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--L-color-grey-base);
     background: var(--L-color-grey-light-30);
     cursor: not-allowed;
-}
-
-.yellow-text {
-    color: var(--L-color-yellow-dark-10);
 }
 
 

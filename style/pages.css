@@ -152,6 +152,34 @@
     bottom: -0.75rem;
     margin: 0 auto;
     left: 50%;
--webkit-transform: translateX(-50%);
-transform: translateX(-50%)
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+/* 
+    FOOTER NAV
+*/
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--L-color-grey-base);
+}
+
+.footer-nav .pagination {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-nav .actions {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
