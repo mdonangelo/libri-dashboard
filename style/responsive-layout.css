@@ -26,4 +26,18 @@
         grid-template-columns: 1fr;
     }
 
+    .feed-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        text-decoration: none;
+        color: var(--L-color-black-base);
+    
+        border-radius: 0.25rem;
+    
+        padding: 1rem 0.5rem;
+    }
+
 }

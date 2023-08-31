@@ -85,7 +85,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -93,7 +93,7 @@
 .container-insight-cards {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-start;
@@ -168,6 +168,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: center;
     margin-top: 1.5rem;
     padding-top: 1rem;
@@ -183,7 +185,8 @@
 
 .footer-nav .actions {
     display: inline-flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
 }
