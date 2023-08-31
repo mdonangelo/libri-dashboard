@@ -1,0 +1,29 @@
+@media (max-width: 80em) {
+    .grid-2-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 64em) {
+    /* LAYOUT */
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .content-area {
+        padding: 1rem;
+    }
+
+    /* TALENT LIST */
+    .talent-list-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 40em) {
+    
+    .talent-list-cards {
+        grid-template-columns: 1fr;
+    }
+
+}

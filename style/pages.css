@@ -51,8 +51,11 @@
     MAIN LAYOUT
 */
 .main-layout {
+    width: 100%;
+    max-width: 100%;
+    min-width: 200px;
     display: grid;
-    grid-template-columns: 18.75rem 1fr;
+    grid-template-columns: 16.5rem 1fr;
     gap: 0;
 }
 

@@ -68,13 +68,4 @@
     .nav-container.active .close-menu {
         display: inline-flex;
     }
-
-    /* LAYOUT */
-    .main-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .content-area {
-        padding: 1rem;
-    }
 }
