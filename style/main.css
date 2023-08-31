@@ -166,6 +166,10 @@ button {
     border: 0;
 }
 
+a {
+    color: var(--L-color-purple-base);
+}
+
 /* 
     TEXT STYLE
 */
@@ -278,6 +282,40 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 /* Link */
+
+.bold-arrow-link {
+    font-weight: 600;
+    color: var(--L-color-grey-dark-20);
+    text-decoration: none;
+    font-size: 0.75rem;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+    gap: 0.25rem;
+}
+
+.bold-arrow-link::after {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    content: " ";
+    background: url('../images/icon/grey/uil_arrow-right.svg') no-repeat;
+    background-size: 1rem 1rem;
+    
+}
+
+.bold-arrow-link:hover {
+    color: var(--L-color-black-base);
+}
+
+.bold-arrow-link:hover::after {
+    background: url('../images/icon/black-base/uil_arrow-right.svg') no-repeat;
+    background-size: 1rem 1rem;
+}
+
 .bold-purple-link {
     font-weight: 600;
     color: var(--L-color-purple-base);
@@ -1211,6 +1249,14 @@ INPUT CHECKBOX
 
 .display_none {
     display: none !important;
+}
+
+.justify_right{
+    justify-content: flex-end !important;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
 }
 
 /* SUB NAVGATION */

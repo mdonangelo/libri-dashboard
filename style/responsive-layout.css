@@ -14,6 +14,10 @@
         padding: 1rem;
     }
 
+    .grid-1-1 {
+        grid-template-columns: 1fr;
+    }
+
     /* TALENT LIST */
     .talent-list-cards {
         grid-template-columns: 1fr 1fr;
@@ -38,6 +42,24 @@
         border-radius: 0.25rem;
     
         padding: 1rem 0.5rem;
+    }
+
+    .talent-box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .talent-info {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .talent-info .column-info {
+        text-align: center;
+        align-items: center;
     }
 
 }

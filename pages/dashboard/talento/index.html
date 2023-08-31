@@ -91,7 +91,7 @@
             </div>
         </div>
 
-        <main class="content-area">
+        <main class="content-area overflow-x-auto">
             <h1 class="headline1-medium-medium mb-1">Analisar talento</h1>
 
             <ul class="breadcrumb mb-1_5">
@@ -192,7 +192,7 @@
 
                             <div class="item-info">
                                 <h4 class="body2-medium grey-dark-20 mb-0_25 ">Linkedin</h4>
-                                <p class="body2-regular black-base">https://linkedin.com/in/daniel.corona</p>
+                                <p class="body2-regular black-base"><a href="#">https://linkedin.com/in/daniel.corona</a></p>
                             </div>
 
                             <div class="item-info">
@@ -211,11 +211,189 @@
                             <img src="../../../images/icon/black-base/uil_pen.svg" alt="">
                         </button>
                     </div>
+
+                    <div class="grid-1">
+                        <div class="item-grid">
+                            <div class="item-info">
+                                <h4 class="body2-medium grey-dark-20 mb-0_25 ">Adicionado pela empresa</h4>
+                                <div class="tag-list">
+                                    <span class="tag-medium emphasis">Liderança</span>
+                                    <span class="tag-medium emphasis">Personas</span>
+                                    <span class="tag-medium emphasis">Jornada do usuário</span>
+                                    <span class="tag-medium emphasis">Protótipo em alta fidelidade</span>
+                                    <span class="tag-medium emphasis">Writing</span>
+                                </div>
+                            </div>
+
+                            <div class="item-info">
+                                <h4 class="body2-medium grey-dark-20 mb-0_25 ">Adicionadas pelo talento</h4>
+                                <div class="tag-list">
+                                    <span class="tag-medium neutral">Blueprint</span>
+                                    <span class="tag-medium neutral">Service Design</span>
+                                    <span class="tag-medium neutral">Prototipação</span>
+                                    <span class="tag-medium neutral">Personas</span>
+                                    <span class="tag-medium neutral">Figma</span>
+                                </div>
+                            </div>
+
+                            <div class="item-info">
+                                <a href="#" class="bold-arrow-link">Ver todas as 42 skills</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-            <div class="rounded-box talent-box mt-1 mb-1">
+            <div class="rounded-box mt-1 mb-1">
                 <h3 class="body1-medium">Feed de atualizações do talento</h3>
+                
+                <div class="content-action-buttons mt-1_5 mb-1  justify_right">
+
+                    <div class="dropdown-container">
+                        <button class="secondary-small-btn dropdown-btn">
+                            Status (1)
+                            <img src="../../../images/icon/black-base/uil_angle-down.svg" alt="">
+                        </button>
+        
+                        <nav class="nav-btn position-top-2_75">
+                            <ul>
+                                <li>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <span class="checkmark"></span>
+                                        <span class="text-check">Selecionar</span>
+                                    </label>
+                                </li>
+        
+                                <li>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkmark"></span>
+                                        <span class="text-check">Selecionar</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    
+
+                    <button class="secondary-small-btn" onclick="showOrCloseFilter('overlay-filter')">
+                        Todos filtros
+                        <img src="../../../images/icon/black-base/uil_filter.svg" alt="">
+                    </button>
+
+                    <div class="popover-container">
+                        <a class="icon-medium-btn popover-btn pressed" href="#">
+                            <img src="../../../images/icon/black-base/uil_list-ul.svg" alt="Lista não ordenada">
+                        </a>
+                        <div class="popover-message">
+                            Exibir em lista
+                        </div>
+                    </div>
+
+                    <div class="popover-container">
+                        <a class="icon-medium-btn popover-btn" href="#">
+                            <img src="../../../images/icon/black-base/uil_square-list.svg" alt="Lista não ordenada">
+                        </a>
+                        <div class="popover-message">
+                            Exibir em cartões
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsible-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Atualização
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Status
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table active-up" href="#">
+                                        Data
+                                    </a>
+                                </td>
+
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img class="action-icon" src="../../../images/icon/actions/barreira.svg" alt="Barreira">
+                                </td>
+                                <td>
+                                    <p class="body1-regular">Uma nova barreira foi reportada</p>
+                                    <p class="body2-regular grey-dark-20">O talento Augusto está com uma barreira</p>
+                                </td>
+                                <td>
+                                    <span class="tag-medium error">Atenção</span>
+                                </td>
+                                <td>
+                                    <p>01/01/2021</p>
+                                </td>
+                                <td>
+                                    <button class="icon-small-btn">
+                                        <img src="../../../images/icon/black-base/uil_more-vert.svg" alt="Configurações">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="action-icon" src="../../../images/icon/actions/atencao.svg" alt="Atenção">
+                                </td>
+                                <td>
+                                    <p class="body1-regular">Alteração de projeto</p>
+                                    <p class="body2-regular grey-dark-20">Agora está alocado no Projeto X</p>
+                                </td>
+                                <td>
+                                    <span class="tag-medium alert">Atualização</span>
+                                </td>
+                                <td>
+                                    <p>01/01/2021</p>
+                                </td>
+                                <td>
+                                    <button class="icon-small-btn">
+                                        <img src="../../../images/icon/black-base/uil_more-vert.svg" alt="Configurações">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <img class="action-icon" src="../../../images/icon/actions/novidade.svg" alt="Novidade">
+                                </td>
+                                <td>
+                                    <p class="body1-regular">Iniciou o contrato de prestação de serviço</p>
+                                    <p class="body2-regular grey-dark-20">O contrato de Augusto está prestes a terminar.</p>
+                                </td>
+                                <td>
+                                    <span class="tag-medium success">Novidade</span>
+                                </td>
+                                <td>
+                                    <p>01/01/2021</p>
+                                </td>
+                                <td>
+                                    <button class="icon-small-btn">
+                                        <img src="../../../images/icon/black-base/uil_more-vert.svg" alt="Configurações">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </main>
 
