@@ -1172,6 +1172,10 @@ INPUT CHECKBOX
     margin-bottom: 1.5rem;
 }
 
+.mb-0_5 {
+    margin-bottom: 0.5rem;
+}
+
 .mt-1 {
     margin-top: 1rem;
 }
@@ -1191,4 +1195,8 @@ INPUT CHECKBOX
 
 .text-center {
     text-align: center;
+}
+
+.display_none {
+    display: none !important;
 }

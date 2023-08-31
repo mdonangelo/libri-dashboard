@@ -180,7 +180,7 @@
                             </nav>
                         </div>
 
-                        <button class="secondary-small-btn">
+                        <button class="secondary-small-btn" onclick="showOrCloseFilter()">
                             Todos filtros
                             <img src="../../images/icon/black-base/uil_filter.svg" alt="">
                         </button>
@@ -577,10 +577,178 @@
 
     </div>
 
+    <div id="overlay-filter" class="overlay-filter display_none" aria-modal="true" role="dialog" aria-labelledby="filtrar" aria-hidden="false" aria-disabled="false" tabindex="0">
+        <div class="filter-content">
+            <div class="line title-overlay-filter mb-1_5">
+                <div class="column">
+                    <h4 class="headline1-medium-medium">Todos filtros</h4>
+                </div>
+                <div class="column">
+                    <button aria-label="Fechar filtro" class="icon-medium-btn close-filter" onclick="showOrCloseFilter()">
+                        <img src="../../images/icon/black-base/uil_times.svg" alt="Fechar">
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-height mb-1_5">
+                <div class="content-filter filter-content-scroll">
+                
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Início de contrato</h5>
+                        <form action="" class="brand-form">
+                            <input type="date" placeholder="Data de início">
+                        </form>
+                    </div>
+
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Fim de contrato</h5>
+                        <form action="" class="brand-form">
+                            <input type="date" placeholder="Data de fim">
+                        </form>
+                    </div>
+
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Projeto</h5>
+                        <ul>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Lab de inovação</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Landing page</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Inovação sales</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Upstream de marketplace</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Downstream de gamification</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Gestor</h5>
+                        <ul>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Andressa Aquino</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Sérgio Camargo</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Zenon Freitas</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Status</h5>
+                        <ul>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Ativo</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Inativo</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Sem status</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="content-filter mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Alocado por</h5>
+                        <ul>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">Libri</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">ci&t</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="checkbox-medium">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="checkmark"></span>
+                                    <span class="text-check">PJ interno</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            
+            </div>
+
+            <div class="footer-filter title-center">
+                <span class="body3-semi-bold black-light-20">10 filtros aplicados</span>
+                <button class="primary-medium-btn">Limpar filtro <img src="../../images/icon/white/uil_trash.svg" alt=""></button>
+            </div>
+        
+        </div>
+
+    </div>
+
     <script src="../../script/profile-submenu.js"></script>
     <script src="../../script/responsive-navigation.js"></script>
     <script src="../../script/dropdown-small-btn.js"></script>
     <script src="../../script/popover-btn.js"></script>
+    <script src="../../script/overlay-filter.js"></script>
     
 </body>
 </html>
