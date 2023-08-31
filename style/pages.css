@@ -64,6 +64,13 @@
     background: var(--L-color-grey-light-40);
 }
 
+.grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: max-content !important;
+}
+
 .grid-2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -335,4 +342,105 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+}
+
+/* 
+    BREAD CRUMB
+*/
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb img {
+    max-width: 1rem;
+}
+
+.breadcrumb li, .breadcrumb li a {
+    font-size: 0.875rem;
+    color: var(--L-color-black-light-20);
+}
+
+.breadcrumb li, .breadcrumb li a {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 0.25rem;
+}
+
+.breadcrumb li a {
+    text-decoration: underline;
+}
+
+.breadcrumb li + li::before {
+    content: "";
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0 0.25rem;
+
+    border: solid var(--L-color-black-light-20);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+    margin-top: 0.5rem;
+}
+
+
+/* 
+    TALENT PAGE
+*/
+.talent-image-medium, .talent-image-small {
+    max-width: 64px;
+    max-height: 64px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.talent-image-small {
+    max-width: 48px;
+}
+
+.talent-image img {
+    width: 100%;
+}
+
+.talent-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.talent-info {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+.talent-info .column-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
 }
