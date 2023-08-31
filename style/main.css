@@ -1168,20 +1168,32 @@ INPUT CHECKBOX
     margin-top: 1.5rem;
 }
 
-.mb-1_5 {
-    margin-bottom: 1.5rem;
-}
-
-.mb-0_5 {
-    margin-bottom: 0.5rem;
-}
-
 .mt-1 {
     margin-top: 1rem;
 }
 
+.mt-0_5 {
+    margin-top: 0.5rem;
+}
+
+.mt-0_25 {
+    margin-top: 0.25rem;
+}
+
+.mb-2_5 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-1_5 {
+    margin-bottom: 1.5rem;
+}
+
 .mb-1 {
     margin-bottom: 1rem;
+}
+
+.mb-0_5 {
+    margin-bottom: 0.5rem;
 }
 
 .mb-0_25 {
@@ -1199,4 +1211,48 @@ INPUT CHECKBOX
 
 .display_none {
     display: none !important;
+}
+
+/* SUB NAVGATION */
+.main-subnav, .main-subnav ul {
+    width: 100%;
+    display: block;
+}
+
+.main-subnav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 1.5rem;
+
+    margin-bottom: 1.5rem;
+}
+
+.main-subnav ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-subnav ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--L-color-black-light-20);
+    padding: 0 0 0.5rem 0;
+    display: block;
+    border-bottom: 2px solid transparent;
+}
+
+.main-subnav ul li a:hover {
+    color: var(--L-color-black-base);
+}
+
+.main-subnav ul li a.active {
+    border-color: var(--L-color-black-base);
+    color: var(--L-color-black-base);
 }

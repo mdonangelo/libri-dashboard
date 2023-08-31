@@ -402,8 +402,11 @@
     TALENT PAGE
 */
 .talent-image-medium, .talent-image-small {
+    min-width: 64px;
     max-width: 64px;
+    min-height: 64px;
     max-height: 64px;
+    width: 100%;
     overflow: hidden;
     border-radius: 50%;
     display: inline-flex;
@@ -412,7 +415,10 @@
 }
 
 .talent-image-small {
+    min-width: 48px;
     max-width: 48px;
+    min-height: 48px;
+    max-height: 48px;
 }
 
 .talent-image img {
@@ -443,4 +449,24 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
+}
+
+.title-and-btn {
+    display: flex;
+    width: 100%;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    gap: 1.25rem;
 }
