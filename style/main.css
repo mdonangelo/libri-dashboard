@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Primary Button */
 .primary-small-btn,
 .primary-medium-btn,
-.brand-form button {
+.brand-form button.primary-small-btn, .brand-form button.primary-medium-btn {
     max-width: fit-content;
 
     line-height: 160%;
@@ -355,7 +355,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid var(--L-color-black-base);
 }
 
-.primary-medium-btn, .brand-form button {
+.primary-medium-btn, 
+.brand-form button.primary-medium-btn {
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
@@ -373,20 +374,20 @@ h1, h2, h3, h4, h5, h6 {
 .primary-medium-btn:hover,
 .primary-small-btn.pressed,
 .primary-medium-btn.pressed,
-.brand-form button:hover,
-.brand-form button.pressed {
+.brand-form button.primary-medium-btn:hover,
+.brand-form button.primary-medium-btn.pressed {
     background: var(--L-color-black-dark-50);
 }
 
 .primary-small-btn:focus, .primary-small-btn:active,
 .primary-medium-btn:focus, .primary-medium-btn:active,
-.brand-form button:focus, .brand-form button:active {
+.brand-form button.primary-medium-btn:focus, .brand-form button.primary-medium-btn:active {
     box-shadow: var(--box-shadow-button);
 }
 
 .primary-small-btn:disabled, .primary-small-btn.disabled,
 .primary-medium-btn:disabled, .primary-medium-btn.disabled,
-.brand-form button:disabled {
+.brand-form button.primary-medium-btn:disabled {
     background: var(--L-color-grey-dark-40);
     color: var(--L-color-grey-dark-20);
     cursor: not-allowed;
@@ -849,36 +850,6 @@ INPUT CHECKBOX
     max-width: 1.25rem;
 }
 
-.comments-form {
-    width: 100%;
-    display: flex;
-    border-top: 1px solid var(--L-color-grey-base);
-    border-bottom: 1px solid var(--L-color-grey-base);
-    padding: 1rem 0;
-
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.comments-form textarea {
-    background: var(--L-color-white);
-    border:0;
-    flex-grow: 1;
-    align-content: center;
-    height: auto;
-
-    vertical-align:middle;
-    padding-top: 1rem;
-}
-
-.comments-form textarea::placeholder {
-    color: var(--L-color-black-light-10);
-    font-style: italic;
-    font-size: 1rem;
-}
-
 .brand-form {
     width: 100%;
 
@@ -979,6 +950,52 @@ INPUT CHECKBOX
 
 .brand-form .error.active {
     display: inline-flex;
+}
+
+.brand-form input[type=file]::file-selector-button, 
+.brand-form input[type=file]::-webkit-file-upload-button {
+    display: inline-flex;
+    
+    border: none;
+    
+    background: var(--L-color-black-base);
+    border-radius: 0.25rem;
+    color: var(--L-color-white);
+    cursor: pointer;
+    
+    float: right;
+}
+
+
+.comments-form {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid var(--L-color-grey-base);
+    border-bottom: 1px solid var(--L-color-grey-base);
+    padding: 1rem 0;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.comments-form textarea {
+    background: var(--L-color-white);
+    border:0;
+    flex-grow: 1;
+    align-content: center;
+    height: auto;
+
+    vertical-align:middle;
+    padding: 0;
+    padding-top: 1rem;
+}
+
+.comments-form textarea::placeholder {
+    color: var(--L-color-black-light-10);
+    font-style: italic;
+    font-size: 1rem;
 }
 
 /* 
@@ -1175,6 +1192,7 @@ INPUT CHECKBOX
     white-space: nowrap;
 
     text-align: center;
+    text-decoration: none;
 }
 
 .tag-small {

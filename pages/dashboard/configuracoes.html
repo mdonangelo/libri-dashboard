@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/pages.css">
+    <link rel="stylesheet" href="../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../style/responsive-layout.css">
+
+    <title>Dados gerais</title>
+</head>
+<body>
+
+    <div class="main-layout">
+        <div class="main-nav">
+
+            <div class="logo">
+                <a href="./">
+                    <img src="../../images/logo-libri.svg" alt="Logo da Libri">
+                </a>
+            </div>
+
+            <a class="hamburguer-menu icon-medium-btn" href="#">
+                <img src="../../images/icon/black-base/uil_menu-hamburguer.svg" alt="Próximo">
+            </a>
+            
+            <div class="nav-container">
+                <nav class="main-list-nav">
+                    <a class="close-menu icon-medium-btn" href="#">
+                        <img src="../../images/icon/black-base/uil_times.svg" alt="Próximo">
+                        Fechar
+                    </a>
+                    <ul class="main-links">
+                        <li>
+                            <a href="./" class="">
+                                <img src="../../images/icon/black-base/uil_home-alt.svg" alt="Ícone casa">
+                                Base de talentos PJ
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a href="./timesheet-recesso.html">
+                                <img src="../../images/icon/black-base/uil_clock-two.svg" alt="Ícone relógio">
+                                Timesheet e recesso
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./documentos.html">
+                                <img src="../../images/icon/black-base/uil_copy.svg" alt="Ícone papéis">
+                                Documentos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./financeiro.html">
+                                <img src="../../images/icon/black-base/uil_dollar-alt.svg" alt="Ícone sifrão">
+                                Financeiro
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./suporte.html">
+                                <img src="../../images/icon/black-base/uil_question-circle.svg" alt="Ícone interrogação">
+                                Suporte
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <div class="menu-popup-container">
+
+                        <ul class="popup-container">
+                            <li><a href="configuracoes.html">Meu perfil</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+        
+                        <a href="#" class="profile-nav">
+                            <span class="profile-info">
+                                <img src="../../images/icon/circle-flags_br.svg" alt="Perfil">
+                                Meu perfil
+                            </span>
+        
+                            <img src="../../images/icon/black-base/uil_menu-hamburguer.svg" alt="Ícone menu">
+                        </a>
+                    
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="content-area overflow-x-auto">
+            <h1 class="headline1-medium-medium mb-1">Dados gerais</h1>
+
+            
+
+            <nav class="main-subnav">
+                <ul>
+                    <li><a class="active" href="./configuracoes.html">Dados gerais</a></li>
+                    <li><a href="./alterar-senha.html">Alterar senha</a></li>
+                </ul>
+            </nav>
+
+            <div class="rounded-box mt-1">
+                <h3 class="body1-medium">Dados gerais.</h3>
+                
+                <form action="" method="POST" class="brand-form mt-1_5">
+                    <label class="input">
+                        <input type="text" name="nome" required>
+                        <span class="input-name">Primeiro nome <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+
+                    <label class="input">
+                        <input type="text" name="sobrenome" required>
+                        <span class="input-name">Sobrenome <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+
+                    <label class="input">
+                        <input type="phone" name="telefone" required>
+                        <span class="input-name">Telefone <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+        
+                    <label class="input">
+                        <input type="email" name="email" required>
+                        <span class="input-name">E-mail <span class="required">*</span></span>
+                        <span class="error active">
+                            <img src="../../images/icon/red/uil_info-circle.svg" alt="">
+                            Insira um e-mail válido
+                        </span>
+                    </label>
+        
+                    <label class="input">
+                        <input type="text" name="papel" required>
+                        <span class="input-name">Papel (ex: Head de produto) <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+
+                    <label class="input">
+                        <input type="file" name="papel" required>
+                        <span class="input-name">Foto <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+        
+                    <div class="comments-form">
+                        <textarea name="comments" placeholder="Adicionar projetos..."></textarea>
+                        <button class="secondary-medium-btn">Adicionar <img src="../../../images/icon/black-base/uil_message.svg" alt=""></button>
+                    </div>
+
+                    <p class="body1-medium mt-1">Responsável pelos projetos:</p>
+
+                    <div class="tag-list">
+                        <a href="#" class="tag-medium emphasis">Liderança <img src="../../images/icon/purple/uil_times.svg" alt=""> </a>
+                        <a href="#" class="tag-medium emphasis">Personas <img src="../../images/icon/purple/uil_times.svg" alt=""></a>
+                        <a href="#" class="tag-medium emphasis">Jornada do usuário <img src="../../images/icon/purple/uil_times.svg" alt=""></a>
+                        <a href="#" class="tag-medium emphasis">Protótipo em alta fidelidade <img src="../../images/icon/purple/uil_times.svg" alt=""></a>
+                        <a href="#" class="tag-medium emphasis">Writing <img src="../../images/icon/purple/uil_times.svg" alt=""></a>
+                    </div>
+                    
+
+                    <button type="submit" name="sendContact" class="primary-medium-btn">Atualizar <img src="../../images/icon/white/uil_save.svg" alt=""></button>
+        
+                </form>
+
+                
+            </div>
+
+
+
+            
+
+            
+        </main>
+
+    </div>
+
+
+    <script src="../../script/profile-submenu.js"></script>
+    <script src="../../script/responsive-navigation.js"></script>
+    <script src="../../script/dropdown-small-btn.js"></script>
+    <script src="../../script/popover-btn.js"></script>
+    <script src="../../script/overlay-filter.js"></script>
+    
+</body>
+</html>

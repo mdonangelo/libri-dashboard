@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../style/responsive-main-menu.css">
     <link rel="stylesheet" href="../../style/responsive-layout.css">
 
-    <title>Suporte</title>
+    <title>Alterar senha</title>
 </head>
 <body>
 
@@ -62,7 +62,7 @@
                         </li>
 
                         <li>
-                            <a class="pressed" href="./suporte.html">
+                            <a href="./suporte.html">
                                 <img src="../../images/icon/black-base/uil_question-circle.svg" alt="Ícone interrogação">
                                 Suporte
                             </a>
@@ -92,65 +92,63 @@
         </div>
 
         <main class="content-area overflow-x-auto">
-            <h1 class="headline1-medium-medium mb-1">Suporte</h1>
+            <h1 class="headline1-medium-medium mb-1">Dados gerais</h1>
 
-            <div class="rounded-box talent-box mt-1 mb-1">
-                <div class="talent-info">
-                    <div class="talent-image-medium">
-                        <img src="../../images/luana-vanin.png" alt="Foto Luana Vanin">
-                    </div>
+            
 
-                    <div class="column-info">
-                        <h2 class="headline2-base-medium">Luana Vanin</h2>
-                        <p class="body2-regular">Head Customes Success</p>
-                    </div>
+            <nav class="main-subnav">
+                <ul>
+                    <li><a href="./configuracoes.html">Dados gerais</a></li>
+                    <li><a class="active" href="./alterar-senha.html">Alterar senha</a></li>
+                </ul>
+            </nav>
 
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">Telefone de contato</h3>
-                        <p class="body2-regular"><a href="#">+55 00 987654321</a></p>
-                    </div>
+            <div class="rounded-box">
+                <form action="" method="POST" class="brand-form">
+                    <p class="body1-medium">Senha anterior:</p>
 
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">E-mail de contato</h3>
-                        <p class="body2-regular"><a href="mailto:luana.vanin@libri.works">luana.vanin@libri.works</a></p>
-                    </div>
+                    <label class="input">
+                        <input type="password" name="senha" required>
+                        <span class="input-name">Senha anterior <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
 
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">Linked-in</h3>
-                        <p class="body2-regular"><a href="https://linkedin.com/in/luavanin">linkedin.com/in/luavanin</a></p>
-                    </div>
+                    <p class="body1-medium mt-1">Nova senha:</p>
 
-                </div>
+                    <label class="input">
+                        <input type="password" name="senha" required>
+                        <span class="input-name">Nova senha <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+
+                    <label class="input">
+                        <input type="password" name="senha" required>
+                        <span class="input-name">Confirmar senha <span class="required">*</span></span>
+                        <span class="error">
+                            <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                            This field is required
+                        </span>
+                    </label>
+
+                    
+
+                    <button type="submit" name="sendContact" class="primary-medium-btn">Atualizar <img src="../../images/icon/white/uil_save.svg" alt=""></button>
+        
+                </form>
+
+                
             </div>
 
-            <div class="rounded-box talent-box mt-1 mb-1">
-                <div class="talent-info">
-                    <div class="talent-image-medium">
-                        <img src="../../images/ana-amaral.png" alt="Foto Ana Amaral">
-                    </div>
 
-                    <div class="column-info">
-                        <h2 class="headline2-base-medium">Ana Amaral</h2>
-                        <p class="body2-regular">Recruiter Specialist</p>
-                    </div>
 
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">Telefone de contato</h3>
-                        <p class="body2-regular"><a href="#">+55 00 987654321</a></p>
-                    </div>
+            
 
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">E-mail de contato</h3>
-                        <p class="body2-regular"><a href="mailto:ana.feltrin@libri.works">ana.feltrin@libri.works</a></p>
-                    </div>
-
-                    <div class="column-info">
-                        <h3 class="body2-semi-bold mb-0_5">Linked-in</h3>
-                        <p class="body2-regular"><a href="https://linkedin.com/in/anafeltrin">linkedin.com/in/anafeltrin</a></p>
-                    </div>
-
-                </div>
-            </div>
             
         </main>
 
