@@ -1377,6 +1377,7 @@ INPUT CHECKBOX
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+    text-align: center;
 
     gap: 0.5rem;
 }
