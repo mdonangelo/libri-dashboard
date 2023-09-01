@@ -1273,12 +1273,28 @@ INPUT CHECKBOX
     margin-right: auto;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
+
 .text-center {
     text-align: center;
 }
 
 .display_none {
     display: none !important;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.gap-0_5 {
+    gap: 0.5rem;
 }
 
 .justify_right{

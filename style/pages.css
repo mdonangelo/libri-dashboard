@@ -85,6 +85,13 @@
     grid-auto-rows: max-content !important;
 }
 
+.grid-4-1 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    grid-auto-rows: max-content !important;
+}
+
 .rounded-box {
     padding: 1.5rem;
     width: 100%;
