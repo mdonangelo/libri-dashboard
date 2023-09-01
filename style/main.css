@@ -1366,3 +1366,17 @@ INPUT CHECKBOX
     border-color: var(--L-color-black-base);
     color: var(--L-color-black-base);
 }
+
+/*
+    EMPTY
+*/
+.display-empty {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 0.5rem;
+}
