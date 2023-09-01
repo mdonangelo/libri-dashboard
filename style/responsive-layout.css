@@ -18,6 +18,10 @@
         grid-template-columns: 1fr;
     }
 
+    .grid-4-1 {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
     /* TALENT LIST */
     .talent-list-cards {
         grid-template-columns: 1fr 1fr;
@@ -60,6 +64,10 @@
     .talent-info .column-info {
         text-align: center;
         align-items: center;
+    }
+
+    .grid-4-1 {
+        grid-template-columns: 1fr;
     }
 
 }
