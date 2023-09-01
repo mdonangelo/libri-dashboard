@@ -550,12 +550,13 @@
     content: " ";
     width: 1rem;
     height: 1rem;
-    background: url('../images/icon/black-base/uil_arrow-down.svg') no-repeat;
+    background: url('../images/icon/black-base/uil_arrow-up.svg') no-repeat;
     background-size: 1rem 1rem;
 }
 
 .sort-table.active-down::after {
-    background: url('../images/icon/black-base/uil_arrow-up.svg') no-repeat;
+    background: url('../images/icon/black-base/uil_arrow-down.svg') no-repeat;
+    background-size: 1rem 1rem;
 }
 
 .action-icon {
