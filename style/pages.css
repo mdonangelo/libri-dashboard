@@ -513,7 +513,7 @@
     vertical-align:middle;
     text-align: left;
     color: var(--L-color-black-base);
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
 }
 
 .responsible-table table td p {
