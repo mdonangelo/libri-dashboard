@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/normalize.css">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/pages.css">
+    <link rel="stylesheet" href="../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../style/responsive-layout.css">
+
+    <title>Recesso</title>
+</head>
+<body>
+
+    <div class="main-layout">
+        <div class="main-nav">
+
+            <div class="logo">
+                <a href="./">
+                    <img src="../../images/logo-libri.svg" alt="Logo da Libri">
+                </a>
+            </div>
+
+            <a class="hamburguer-menu icon-medium-btn" href="#">
+                <img src="../../images/icon/black-base/uil_menu-hamburguer.svg" alt="Próximo">
+            </a>
+            
+            <div class="nav-container">
+                <nav class="main-list-nav">
+                    <a class="close-menu icon-medium-btn" href="#">
+                        <img src="../../images/icon/black-base/uil_times.svg" alt="Próximo">
+                        Fechar
+                    </a>
+                    <ul class="main-links">
+                        <li>
+                            <a href="./" class="">
+                                <img src="../../images/icon/black-base/uil_home-alt.svg" alt="Ícone casa">
+                                Base de talentos PJ
+                            </a>
+                        </li>
+        
+                        <li>
+                            <a class="pressed" href="./timesheet-recesso.html">
+                                <img src="../../images/icon/black-base/uil_clock-two.svg" alt="Ícone relógio">
+                                Timesheet e recesso
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./documentos.html">
+                                <img src="../../images/icon/black-base/uil_copy.svg" alt="Ícone papéis">
+                                Documentos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./financeiro.html">
+                                <img src="../../images/icon/black-base/uil_dollar-alt.svg" alt="Ícone sifrão">
+                                Financeiro
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./suporte.html">
+                                <img src="../../images/icon/black-base/uil_question-circle.svg" alt="Ícone interrogação">
+                                Suporte
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <div class="menu-popup-container">
+
+                        <ul class="popup-container">
+                            <li><a href="#">Meu perfil</a></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+        
+                        <a href="#" class="profile-nav">
+                            <span class="profile-info">
+                                <img src="../../images/icon/circle-flags_br.svg" alt="Perfil">
+                                Meu perfil
+                            </span>
+        
+                            <img src="../../images/icon/black-base/uil_menu-hamburguer.svg" alt="Ícone menu">
+                        </a>
+                    
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="content-area overflow-x-auto">
+            <h1 class="headline1-medium-medium mb-1">Timesheet e recesso</h1>
+
+            
+
+            <nav class="main-subnav">
+                <ul>
+                    <li><a href="./timesheet-recesso.html">Gestão de timesheet</a></li>
+                    <li><a class="active" href="./recesso.html">Gestão de recessos</a></li>
+                </ul>
+            </nav>
+
+            
+            <div class="rounded-box mt-1">
+                <h3 class="body1-medium">Todos os recessos.</h3>
+                
+                <div class="content-action-buttons mt-1_5">
+
+                    <form action="" class="search-form">
+                        <input type="text" name="search" placeholder="Buscar...">
+                        <button><img src="../../images/icon/grey/uil_search.svg" alt=""></button>
+                    </form>
+
+                    <div class="dropdown-container">
+                        <button class="secondary-small-btn dropdown-btn">
+                            Status (1)
+                            <img src="../../images/icon/black-base/uil_angle-down.svg" alt="">
+                        </button>
+        
+                        <nav class="nav-btn position-top-2_75">
+                            <ul>
+                                <li>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="" checked>
+                                        <span class="checkmark"></span>
+                                        <span class="text-check">Selecionar</span>
+                                    </label>
+                                </li>
+        
+                                <li>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkmark"></span>
+                                        <span class="text-check">Selecionar</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <button class="secondary-small-btn" onclick="showOrCloseFilter('overlay-filter')">
+                        Todos filtros
+                        <img src="../../images/icon/black-base/uil_filter.svg" alt="">
+                    </button>
+
+                    <div class="popover-container">
+                        <a class="icon-medium-btn popover-btn" href="#">
+                            <img src="../../images/icon/black-base/uil_list-ul.svg" alt="Lista não ordenada">
+                        </a>
+                        <div class="popover-message">
+                            Exibir em lista
+                        </div>
+                    </div>
+
+                    <div class="popover-container">
+                        <a class="icon-medium-btn popover-btn pressed" href="#">
+                            <img src="../../images/icon/black-base/uil_square-list.svg" alt="Lista não ordenada">
+                        </a>
+                        <div class="popover-message">
+                            Exibir em cartões
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-insight-cards mb-1_5 mt-1">
+                    <div class="insight-card">
+                        <span class="headline1-large-light mb-0_25">1</span>
+                        <p class="body2-regular">Pendente de aprovação</p>
+                    </div>
+                    <div class="insight-card">
+                        <span class="headline1-large-light mb-0_25">6</span>
+                        <p class="body2-regular">Em curso</p>
+                    </div>
+                    <div class="insight-card">
+                        <span class="headline1-large-light mb-0_25">1</span>
+                        <p class="body2-regular">Negado</p>
+                    </div>
+                </div>
+
+                <div class="responsible-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Status
+                                    </a>
+                                </td>
+
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Talento
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Cargo
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Projeto
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table" href="#">
+                                        Início do recesso
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a class="sort-table active-down" href="#">
+                                        Fim do recesso
+                                    </a>
+                                </td>
+
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkmark"></span>
+                                        <span class="text-check"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="tag-medium success">Aprovado</span>
+                                </td>
+                                <td>
+                                    Daniel Neto
+                                </td>
+
+                                <td>
+                                    Service Designer
+                                </td>
+
+                                <td>
+                                    Inovação H3
+                                </td>
+
+                                <td>01/01/2023</td>
+
+                                <td>01/01/2023</td>
+
+                                <td>
+                                    <button class="icon-small-btn">
+                                        <img src="../../images/icon/black-base/uil_more-vert.svg" alt="Configurações">
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label class="checkbox-small">
+                                        <input type="checkbox" name="" id="">
+                                        <span class="checkmark"></span>
+                                        <span class="text-check"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <span class="tag-medium success">Aprovado</span>
+                                </td>
+                                <td>
+                                    Daniel Neto
+                                </td>
+
+                                <td>
+                                    Service Designer
+                                </td>
+
+                                <td>
+                                    Inovação H3
+                                </td>
+
+                                <td>01/01/2023</td>
+
+                                <td>01/01/2023</td>
+
+                                <td>
+                                    <button class="icon-small-btn">
+                                        <img src="../../images/icon/black-base/uil_more-vert.svg" alt="Configurações">
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <footer class="footer-nav">
+                    <div class="pagination">
+                        <span class="body3-medium black-light-20">1 - 6 de 32</span>
+                        <div class="popover-container">
+                            <button class="icon-medium-btn popover-btn disabled">
+                                <img src="../../images/icon/black-base/uil_angle-left.svg" alt="Anterior">
+                            </button>
+            
+                            <div class="popover-message">
+                                Anterior
+                            </div>
+                        </div>
+
+                        <div class="popover-container">
+                            <button class="icon-medium-btn popover-btn">
+                                <img src="../../images/icon/black-base/uil_angle-right.svg" alt="Próximo">
+                            </button>
+            
+                            <div class="popover-message">
+                                Próxima página
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <span class="body3-medium black-light-20">1 selecionado</span>
+                        <a class="icon-medium-btn green-dark-10" href="#">
+                            <img src="../../images/icon/green/uil_check.svg" alt="Aprovar">
+                            Aprovar
+                        </a>
+                        <a class="icon-medium-btn" href="#">
+                            <img src="../../images/icon/black-base/uil_download-alt.svg" alt="Download">
+                            Download
+                        </a>
+                        <a class="icon-medium-btn red-dark-10" href="#">
+                            <img src="../../images/icon/red/uil_trash.svg" alt="Inativar">
+                            Deletar
+                        </a>
+                    </div>
+                    
+                </footer>
+
+            </div>
+
+
+
+            
+
+            
+        </main>
+
+    </div>
+
+
+    <script src="../../script/profile-submenu.js"></script>
+    <script src="../../script/responsive-navigation.js"></script>
+    <script src="../../script/dropdown-small-btn.js"></script>
+    <script src="../../script/popover-btn.js"></script>
+    <script src="../../script/overlay-filter.js"></script>
+    
+</body>
+</html>
