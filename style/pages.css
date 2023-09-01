@@ -516,6 +516,10 @@
     padding: 1rem 0.5rem;
 }
 
+.responsible-table table tbody tr:hover {
+    background: var(--L-color-grey-light-40);
+}
+
 .responsible-table table td p {
     font-size: 0.875rem;
 }
@@ -651,4 +655,21 @@
     color: var(--L-color-red-dark-10);
     text-decoration: none;
     font-size: 0.75rem;
+}
+
+/* 
+    CALLOUT
+*/
+.callout-container {
+    display: block;
+    background: var(--L-color-brand-gradient);
+    border-radius: 0.5rem;
+    padding: 1px;
+}
+
+.callout-content {
+    display: block;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--L-color-white);
 }
