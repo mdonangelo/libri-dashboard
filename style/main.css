@@ -170,6 +170,15 @@ a {
     color: var(--L-color-purple-base);
 }
 
+button {
+    background: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    height: auto;
+}
+
 /* 
     TEXT STYLE
 */
@@ -283,7 +292,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Link */
 
-.bold-arrow-link {
+.bold-arrow-link, .bold-plus-link {
+    background: transparent;
     font-weight: 600;
     color: var(--L-color-grey-dark-20);
     text-decoration: none;
@@ -294,10 +304,12 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-start;
     align-items: center;
     
+    cursor: pointer;
+
     gap: 0.25rem;
 }
 
-.bold-arrow-link::after {
+.bold-arrow-link::after, .bold-plus-link::after {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -307,12 +319,24 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.bold-arrow-link:hover {
+.bold-arrow-link:hover, .bold-plus-link:hover {
     color: var(--L-color-black-base);
+    background-size: 1rem 1rem;
 }
 
-.bold-arrow-link:hover::after {
+.bold-arrow-link:hover::after, .bold-plus-link:hover::after {
     background: url('../images/icon/black-base/uil_arrow-right.svg') no-repeat;
+    background-size: 1rem 1rem;
+}
+
+.bold-plus-link::after {
+    background: url('../images/icon/grey/uil_plus-circle.svg') no-repeat;
+    background-size: 1rem 1rem;
+    
+}
+
+.bold-plus-link:hover::after {
+    background: url('../images/icon/black-base/uil_plus-circle.svg') no-repeat;
     background-size: 1rem 1rem;
 }
 
@@ -324,6 +348,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .bold-purple-link:hover {
     color: var(--L-color-purple-dark-10);
+}
+
+.container-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--L-color-grey-base);
+    border-bottom: 1px solid var(--L-color-grey-base);
+
+    padding: 1.5rem 0;
 }
 
 /* Primary Button */
@@ -924,6 +963,7 @@ INPUT CHECKBOX
 .brand-form select {
     background: url("../images/icon/grey/uil_angle-down.svg") var(--L-color-grey-light-40) no-repeat;
     background-position: 99% 1rem;
+    cursor: pointer;
 }
 
 .brand-form .required {
@@ -980,7 +1020,7 @@ INPUT CHECKBOX
     justify-content: flex-start;
 }
 
-.comments-form textarea {
+.comments-form textarea, .comments-form input {
     background: var(--L-color-white);
     border:0;
     flex-grow: 1;
@@ -992,10 +1032,14 @@ INPUT CHECKBOX
     padding-top: 1rem;
 }
 
-.comments-form textarea::placeholder {
+.comments-form textarea::placeholder, .comments-form input::placeholder {
     color: var(--L-color-black-light-10);
     font-style: italic;
     font-size: 1rem;
+}
+
+.comments-form input {
+    padding: 1rem 0;
 }
 
 /* 
@@ -1295,6 +1339,14 @@ INPUT CHECKBOX
     margin-top: auto;
 }
 
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
 .text-center {
     text-align: center;
 }
@@ -1321,6 +1373,12 @@ INPUT CHECKBOX
 
 .overflow-x-auto {
     overflow-x: auto;
+}
+
+.block-center {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 /* SUB NAVGATION */
@@ -1384,4 +1442,24 @@ INPUT CHECKBOX
 
 .display-empty img {
     max-width: 8rem;
+}
+
+/*
+    SUCCESS CONTAINER
+*/
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+
+    gap: 1rem;
+}
+
+.success-container img {
+    max-width: 15rem;
 }

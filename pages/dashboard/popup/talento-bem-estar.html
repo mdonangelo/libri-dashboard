@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../style/main.css">
+    <link rel="stylesheet" href="../../../style/pages.css">
+    <link rel="stylesheet" href="../../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../../style/responsive-layout.css">
+
+    <title>Minha base de talentos</title>
+</head>
+<body>
+
+    <div id="overlay-filter" class="overlay-filter" aria-modal="true" role="dialog" aria-labelledby="filtrar" aria-hidden="false" aria-disabled="false" tabindex="0">
+        <div class="filter-content">
+            <div class="line title-overlay-filter mb-1_5">
+                <div class="column">
+                    <h4 class="headline1-medium-medium">Bem-estar reportado.</h4>
+                </div>
+                <div class="column">
+                    <button aria-label="Fechar filtro" class="icon-medium-btn close-filter" onclick="showOrCloseFilter('overlay-filter')">
+                        <img src="../../../images/icon/black-base/uil_times.svg" alt="Fechar">
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-height mb-1_5 mt-1_5">
+                <div class="content-filter filter-content-scroll">
+
+                    <div class="mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Como é feito a coleta desse dado?</h5>
+                        <ul class="grey-list">
+                            <li>Respostas semanais do talento dentro do web app de Libri.</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Bem-estar autorreportado pelo talento.</h5>
+
+                        <div class="content-action-buttons mt-1_5">
+
+                            <form action="" class="search-form">
+                                <input type="text" name="search" placeholder="Buscar...">
+                                <button><img src="../../../images/icon/grey/uil_search.svg" alt=""></button>
+                            </form>
+        
+                            <div class="dropdown-container">
+                                <button class="secondary-small-btn dropdown-btn">
+                                    Status (1)
+                                    <img src="../../../images/icon/black-base/uil_angle-down.svg" alt="">
+                                </button>
+                
+                                <nav class="nav-btn position-top-2_75">
+                                    <ul>
+                                        <li>
+                                            <label class="checkbox-small">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <span class="checkmark"></span>
+                                                <span class="text-check">Selecionar</span>
+                                            </label>
+                                        </li>
+                
+                                        <li>
+                                            <label class="checkbox-small">
+                                                <input type="checkbox" name="" id="">
+                                                <span class="checkmark"></span>
+                                                <span class="text-check">Selecionar</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+        
+                            <button class="secondary-small-btn" onclick="showOrCloseFilter('overlay-filter')">
+                                Todos filtros
+                                <img src="../../../images/icon/black-base/uil_filter.svg" alt="">
+                            </button>
+        
+                        </div>
+
+                        <p class="mt-1">-- Gráfico --</p>
+                        
+                    </div>
+
+                    <div>
+                        <h5 class="body1-medium mb-0_5">Detalhamento de respostas.</h5>
+
+                        <div class="responsible-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <a class="sort-table active-down" href="#">
+                                                Data
+                                            </a>
+                                        </td>
+        
+                                        <td>
+                                            <a class="sort-table" href="#">
+                                                Pergunta
+                                            </a>
+                                        </td>
+        
+                                        </td>
+        
+                                        <td>
+                                            <a class="sort-table" href="#">
+                                                Resposta
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            31/08/2023
+                                        </td>
+                                        <td>
+                                            Texto da primeira pergunta
+                                        </td>
+                                        <td>
+                                            Antes era um promotor e agora está neutro, sente que não está contribuindo tão bem quanto a empresa espera
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>
+                                            31/08/2023
+                                        </td>
+                                        <td>
+                                            Texto da segunda pergunta
+                                        </td>
+                                        <td>
+                                            Continua como promotor. O pulse semanal segue em níveis altos e não há nenhum report de barreira
+                                        </td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    
+                    
+                
+                    
+                </div>
+            
+            </div>
+
+            <div class="block-center">
+                <button class="secondary-medium-btn" onclick="showOrCloseFilter('overlay-filter')"><img src="../../../images/icon/black-base/uil_times.svg" alt="Voltar"> Fechar</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script src="../../../script/dropdown-small-btn.js"></script>
+    <script src="../../../script/overlay-filter.js"></script>
+    
+</body>
+</html>

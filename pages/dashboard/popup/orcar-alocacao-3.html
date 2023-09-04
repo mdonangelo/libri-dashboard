@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../style/main.css">
+    <link rel="stylesheet" href="../../../style/pages.css">
+    <link rel="stylesheet" href="../../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../../style/responsive-layout.css">
+
+    <title>Minha base de talentos</title>
+</head>
+<body>
+
+    <div id="overlay-filter" class="overlay-filter" aria-modal="true" role="dialog" aria-labelledby="filtrar" aria-hidden="false" aria-disabled="false" tabindex="0">
+        <div class="filter-content">
+            <div class="line title-overlay-filter mb-1_5">
+                <div class="column">
+                    <h4 class="headline1-medium-medium">Orçar alocação.</h4>
+                </div>
+                <div class="column">
+                    <button aria-label="Fechar filtro" class="icon-medium-btn close-filter" onclick="showOrCloseFilter('overlay-filter')">
+                        <img src="../../../images/icon/black-base/uil_times.svg" alt="Fechar">
+                    </button>
+                </div>
+            </div>
+
+            <ol class="steps">
+                <li class="filled">
+                    <a href="./orcar-alocacao-1.html">
+                        <span class="number">1</span>
+                        Dados básicos
+                    </a>
+                </li>
+
+                <li class="filled">
+                    <a href="./orcar-alocacao-2.html">
+                        <span class="number">2</span>
+                        Orçamento rápido
+                    </a>
+                </li>
+
+                <li class="current">
+                    <a href="./orcar-alocacao-3.html">
+                        <span class="number">3</span>
+                        Agendar reunião
+                    </a>
+                </li>
+            </ol>
+
+            <p class="black-light-20">Veja valores medianos de alocação de um talento PJ e agende uma conversa com o time de Libri.</p>
+
+            <div class="max-height mb-1_5 mt-1_5">
+                <div class="content-filter filter-content-scroll">
+
+                    
+                </div>
+            
+            </div>
+
+            <div class="block-center">
+                <button class="secondary-medium-btn" onclick="showOrCloseFilter('overlay-filter')"><img src="../../../images/icon/black-base/uil_times.svg" alt="Voltar"> Fechar</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script src="../../../script/overlay-filter.js"></script>
+    
+</body>
+</html>

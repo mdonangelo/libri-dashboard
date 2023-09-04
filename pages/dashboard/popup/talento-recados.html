@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../style/main.css">
+    <link rel="stylesheet" href="../../../style/pages.css">
+    <link rel="stylesheet" href="../../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../../style/responsive-layout.css">
+
+    <title>Minha base de talentos</title>
+</head>
+<body>
+
+    <div id="overlay-filter" class="overlay-filter" aria-modal="true" role="dialog" aria-labelledby="filtrar" aria-hidden="false" aria-disabled="false" tabindex="0">
+        <div class="filter-content">
+            <div class="line title-overlay-filter mb-1_5">
+                <div class="column">
+                    <h4 class="headline1-medium-medium">Recados do talento.</h4>
+                </div>
+                <div class="column">
+                    <button aria-label="Fechar filtro" class="icon-medium-btn close-filter" onclick="showOrCloseFilter('overlay-filter')">
+                        <img src="../../../images/icon/black-base/uil_times.svg" alt="Fechar">
+                    </button>
+                </div>
+            </div>
+
+            <div class="max-height mb-1_5 mt-1_5">
+                <div class="content-filter filter-content-scroll">
+
+                    <div class="mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Como é feito a coleta desse dado?</h5>
+                        <ul class="grey-list">
+                            <li>Mensagens enviadas pelos talentos no web app de Libri,</li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-1_5">
+                        <h5 class="body1-medium mb-0_5">Dados gerais.</h5>
+                        <div class="container-insight-cards mb-1_5 mt-1">
+                            <div class="insight-card">
+                                <span class="headline1-large-light mb-0_25">15</span>
+                                <p class="body2-regular">Respostas</p>
+                            </div>
+                            <div class="insight-card">
+                                <span class="headline1-large-light mb-0_25">30</span>
+                                <p class="body2-regular">Barreiras reportadas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h5 class="body1-medium mb-0_5">Detalhamento dos recados.</h5>
+
+                        <div class="responsible-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <a class="sort-table active-down" href="#">
+                                                Data
+                                            </a>
+                                        </td>
+        
+                                        <td>
+                                            <a class="sort-table" href="#">
+                                                Recado escrito
+                                            </a>
+                                        </td>
+        
+                                        </td>
+        
+                                        <td>
+                                            <a class="sort-table" href="#">
+                                                Status
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>01/11/2023</p>
+                                        </td>
+                                        <td>
+                                            <p>Falta de colaboração entre departamentos dificultou a criação de experiências coesas para os clientes.</p>
+                                        </td>
+                                        <td>
+                                            <span class="tag-medium success">Tudo bem</span>
+                                        </td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>
+                                            <p>01/11/2023</p>
+                                        </td>
+                                        <td>
+                                            <p>Priorização de prazos curtos em detrimento da pesquisa aprofundada comprometeu a qualidade das propostas do service designer.</p>
+                                        </td>
+                                        <td>
+                                            <span class="tag-medium alert">Barreira</span>
+                                        </td>
+                                    </tr>
+        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    
+                    
+                
+                    
+                </div>
+            
+            </div>
+
+            <div class="block-center">
+                <button class="secondary-medium-btn" onclick="showOrCloseFilter('overlay-filter')"><img src="../../../images/icon/black-base/uil_times.svg" alt="Voltar"> Fechar</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script src="../../../script/overlay-filter.js"></script>
+    
+</body>
+</html>

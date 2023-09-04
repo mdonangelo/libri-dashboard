@@ -674,3 +674,85 @@
     border-radius: 0.5rem;
     background: var(--L-color-white);
 }
+
+/* 
+POPUP ELEMENTS
+*/
+.steps {
+    margin: 1.5rem 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps .number {
+    display: inline-flex;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--L-color-white);
+    border: 1px solid var(--L-color-grey-dark-10);
+
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.steps a {
+    color: var(--L-color-grey-dark-10);
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: all ease 0.2s;
+}
+
+.steps a:hover {
+    color: var(--L-color-black-base);
+    border: var(--L-color-black-base);
+    
+}
+
+.steps a:hover .number {
+    color: var(--L-color-white);
+    background-color: var(--L-color-black-base);
+    border-color: var(--L-color-black-base);
+}
+
+.current a {
+    color: var(--L-color-black-base);
+    cursor: not-allowed;
+}
+
+.current .number {
+    color: var(--L-color-white);
+    border-color: var(--L-color-black-base);
+    background: var(--L-color-black-base);
+}
+
+.filled a {
+    color: var(--L-color-black-base);
+}
+
+.filled .number {
+    background: var(--L-color-grey-dark-20);
+    border: var(--L-color-grey-dark-20);
+    color: var(--L-color-white);
+}
+
+ul.grey-list {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+ul.grey-list li {
+    color: var(--L-color-black-light-20);
+    padding: 0.5rem 0;
+    line-height: 160%;
+}

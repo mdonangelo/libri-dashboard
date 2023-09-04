@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style/normalize.css">
+    <link rel="stylesheet" href="../../../style/main.css">
+    <link rel="stylesheet" href="../../../style/pages.css">
+    <link rel="stylesheet" href="../../../style/responsive-main-menu.css">
+    <link rel="stylesheet" href="../../../style/responsive-layout.css">
+
+    <title>Minha base de talentos</title>
+</head>
+<body>
+
+    <div id="overlay-filter" class="overlay-filter" aria-modal="true" role="dialog" aria-labelledby="filtrar" aria-hidden="false" aria-disabled="false" tabindex="0">
+        <div class="filter-content">
+            <div class="line title-overlay-filter mb-1_5">
+                <div class="column">
+                    <h4 class="headline1-medium-medium">Cadastrar talento que não são de Libri.</h4>
+                </div>
+                <div class="column">
+                    <button aria-label="Fechar filtro" class="icon-medium-btn close-filter" onclick="showOrCloseFilter('overlay-filter')">
+                        <img src="../../../images/icon/black-base/uil_times.svg" alt="Fechar">
+                    </button>
+                </div>
+            </div>
+
+            <ol class="steps">
+                <li class="filled">
+                    <a href="./cadastrar-talento-1.html">
+                        <span class="number">1</span>
+                        Dados gerais
+                    </a>
+                </li>
+
+                <li class="current">
+                    <a href="./cadastrar-talento-2.html">
+                        <span class="number">2</span>
+                        Alocação
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./cadastrar-talento-3.html">
+                        <span class="number">3</span>
+                        Documentos
+                    </a>
+                </li>
+            </ol>
+
+            <p class="black-light-20">Centralize as informações dos seus talentos PJ em um só lugar. Tenha acesso fácil aos constratos, documentos e informações do talento.</p>
+
+            <div class="max-height mb-1_5 mt-1_5">
+                <div class="content-filter filter-content-scroll">
+
+                    <form action="./cadastrar-talento-3.html" class="brand-form">
+                        <label class="input">
+                            <input type="text" name="nome" required>
+                            <span class="input-name">Papel do talento <span class="required">*</span></span>
+                            <span class="error">
+                                <img src="../../../images/icon/red/uil_info-circle.svg" alt="">
+                                This field is required
+                            </span>
+                        </label>
+
+                        <label class="input">
+                            <select name="" id="" required>
+                                <option value="" selected></option>
+                                <option value="">Samba</option>
+                                <option value="">Jazz</option>
+                                <option value="">Arrocha</option>
+                            </select>
+                                
+                            <span class="input-name">Projeto alocado... <span class="required">*</span></span>
+                            <span class="error">
+                                <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                                This field is required
+                            </span>
+                        </label>
+
+                        <label class="input">
+                            <select name="" id="" required>
+                                <option value="" selected></option>
+                                <option value="">Samba</option>
+                                <option value="">Jazz</option>
+                                <option value="">Arrocha</option>
+                            </select>
+                                
+                            <span class="input-name">Gestor(a) responsável... <span class="required">*</span></span>
+                            <span class="error">
+                                <img src="../images/icon/red/uil_info-circle.svg" alt="">
+                                This field is required
+                            </span>
+                        </label>
+
+                        <label class="input">
+                            <input type="date" name="nome" placeholder="" required>
+                            <span class="input-name">Data de início <span class="required">*</span></span>
+                            <span class="error">
+                                <img src="../../../images/icon/red/uil_info-circle.svg" alt="">
+                                This field is required
+                            </span>
+                        </label>
+
+                        <label class="input">
+                            <input type="date" name="nome" placeholder="" required>
+                            <span class="input-name">Previsão de fim <span class="required">*</span></span>
+                            <span class="error">
+                                <img src="../../../images/icon/red/uil_info-circle.svg" alt="">
+                                This field is required
+                            </span>
+                        </label>
+
+                    </form>
+                
+                    
+                </div>
+            
+            </div>
+
+            <div class="footer-filter title-center">
+                <a href="#" class="secondary-medium-btn"><img src="../../../images/icon/black-base/uil_arrow-left.svg" alt="Voltar"> Voltar</a>
+                <button class="primary-medium-btn">Próximo <img src="../../../images/icon/white/uil_arrow-right.svg" alt="Próximo"></button>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <script src="../../../script/overlay-filter.js"></script>
+    
+</body>
+</html>
