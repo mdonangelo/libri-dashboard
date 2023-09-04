@@ -899,6 +899,7 @@ INPUT CHECKBOX
 }
 
 .brand-form .input {
+    display: block;
     position: relative;
     text-align: left;
 }
@@ -1004,6 +1005,10 @@ INPUT CHECKBOX
     cursor: pointer;
     
     float: right;
+}
+
+.brand-form input[type=date]:placeholder-shown {
+    background: red;
 }
 
 

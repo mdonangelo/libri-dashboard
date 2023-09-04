@@ -606,141 +606,156 @@
                 <div class="content-filter filter-content-scroll">
                 
                     <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Início de contrato</h5>
+                        
                         <form action="" class="brand-form">
-                            <input type="date" placeholder="Data de início">
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Início de contrato</h5>
+                                <label class="input">
+                                    <input type="text" name="nome" placeholder="" onfocus="this.type='date'" onblur="this.type='text'" required>
+                                    <span class="input-name">Data de início <span class="required">*</span></span>
+                                    <span class="error">
+                                        <img src="../../../images/icon/red/uil_info-circle.svg" alt="">
+                                        This field is required
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Fim de contrato</h5>
+                                <label class="input">
+                                    <input type="text" name="nome" placeholder="" onfocus="this.type='date'" onblur="this.type='text'" required>
+                                    <span class="input-name">Data de início <span class="required">*</span></span>
+                                    <span class="error">
+                                        <img src="../../../images/icon/red/uil_info-circle.svg" alt="">
+                                        This field is required
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Projeto</h5>
+                                <ul>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Lab de inovação</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Landing page</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Inovação sales</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Upstream de marketplace</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Downstream de gamification</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Gestor</h5>
+                                <ul>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Andressa Aquino</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Sérgio Camargo</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Zenon Freitas</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Status</h5>
+                                <ul>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Ativo</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Inativo</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Sem status</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h5 class="body1-medium mb-0_5">Alocado por</h5>
+                                <ul>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">Libri</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">ci&t</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox-medium">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="checkmark"></span>
+                                            <span class="text-check">PJ interno</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            
                         </form>
-                    </div>
-
-                    <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Fim de contrato</h5>
-                        <form action="" class="brand-form">
-                            <input type="date" placeholder="Data de fim">
-                        </form>
-                    </div>
-
-                    <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Projeto</h5>
-                        <ul>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Lab de inovação</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Landing page</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Inovação sales</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Upstream de marketplace</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Downstream de gamification</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Gestor</h5>
-                        <ul>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Andressa Aquino</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Sérgio Camargo</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Zenon Freitas</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Status</h5>
-                        <ul>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Ativo</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Inativo</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Sem status</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-
-
-                    <div class="content-filter mb-1_5">
-                        <h5 class="body1-medium mb-0_5">Alocado por</h5>
-                        <ul>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">Libri</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">ci&t</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="checkbox-medium">
-                                    <input type="checkbox" name="" id="">
-                                    <span class="checkmark"></span>
-                                    <span class="text-check">PJ interno</span>
-                                </label>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
