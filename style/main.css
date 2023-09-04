@@ -1126,7 +1126,8 @@ INPUT CHECKBOX
 
 .main-links {
     width: 100%;
-    flex-grow: 1;
+    height: auto;
+    min-height: calc(100vh - 160px);
 }
 
 .main-list-nav ul li + li {

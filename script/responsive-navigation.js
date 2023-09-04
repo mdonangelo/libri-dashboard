@@ -1,19 +1,22 @@
 // Menu hamburguer no mobile
-let hamburguerMenu = document.querySelector('.hamburguer-menu');
-let closeMenu = document.querySelector('.close-menu');
-let navContainer = document.querySelector('.nav-container');
+const hamburguerMenu = document.querySelector('.hamburguer-menu');
+const closeMenu = document.querySelector('.close-menu');
+const navContainer = document.querySelector('.nav-container');
+let heightNav = 0;
 
 // Botões para abrir e fechar menu com clique
 hamburguerMenu.addEventListener("click", (e) => {toggleResponsiveMenu(e)});
 closeMenu.addEventListener("click", (e) => {toggleResponsiveMenu(e)});
+
 // Botões para abrir e fechar menu com espaço
 hamburguerMenu.addEventListener('keyup', e => {
-    if (event.code === 'Space') {
+    if (e.code === 'Space' && !document.querySelector('.nav-container').classList.contains('active')) {
         toggleResponsiveMenu(e)
     }
 });
+
 closeMenu.addEventListener('keyup', e => {
-    if (event.code === 'Space') {
+    if (e.code === 'Space' ) {
         toggleResponsiveMenu(e)
     }
 });
@@ -23,11 +26,21 @@ navContainer.addEventListener("click", function(e) {
     if(e.target.classList.contains("nav-container")){
         toggleResponsiveMenu(e);
     }
-    
 })
 
 // Função para abrir e fechar menu
 function toggleResponsiveMenu(event) {
     event.preventDefault();
     navContainer.classList.toggle('active');
+    
+    if(document.querySelector('.nav-container').classList.contains('active')){
+        // Evitar scroll após abrir menu
+        heightNav = document.querySelector('.nav-container').clientHeight;
+        document.body.style.height = heightNav + "px";
+        document.body.style.overflow = "hidden";
+        window.scrollTo(0, 0);
+    }else {
+        document.body.style.height = "auto";
+        document.body.style.overflow = "auto";
+    }
 }
