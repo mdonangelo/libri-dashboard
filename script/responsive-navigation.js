@@ -1,6 +1,7 @@
 // Menu hamburguer no mobile
 const hamburguerMenu = document.querySelector('.hamburguer-menu');
 const closeMenu = document.querySelector('.close-menu');
+const mainLayout = document.querySelector('.main-layout');
 const navContainer = document.querySelector('.nav-container');
 let heightNav = 0;
 
@@ -36,11 +37,11 @@ function toggleResponsiveMenu(event) {
     if(document.querySelector('.nav-container').classList.contains('active')){
         // Evitar scroll após abrir menu
         heightNav = document.querySelector('.nav-container').clientHeight;
-        document.body.style.height = heightNav + "px";
-        document.body.style.overflow = "hidden";
+        mainLayout.style.height = heightNav + "px";
+        mainLayout.style.overflow = "hidden";
         window.scrollTo(0, 0);
     }else {
-        document.body.style.height = "auto";
-        document.body.style.overflow = "auto";
+        mainLayout.style.height = "auto";
+        mainLayout.style.overflow = "auto";
     }
 }
